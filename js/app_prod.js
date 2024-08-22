@@ -1,9 +1,9 @@
 let Cantidad = [];
-const form = document.getElementById("form");
+const form2 = document.getElementById("form2");
 //const loginForm = document.getElementById("loginForm");
-const tabla = document.getElementById("productosTabla").getElementsByTagName("tbody1")[0];
+const tabla2 = document.getElementById("productosTabla").getElementsByTagName("tbody")[0];
 
-form.addEventListener("submit", function (e) {
+form2.addEventListener("submit", function (e) {
     e.preventDefault();
     const cebollaLarga = document.getElementById("cebollaLarga").value;
     const lechugaCrespa = document.getElementById("lechugaCrespa").value;
@@ -15,14 +15,14 @@ form.addEventListener("submit", function (e) {
     const productos = { cebollaLarga, lechugaCrespa, Mix, Lulo, Scotch, Rojo };
     Cantidad.push(productos);
     actualizarTabla();
-    form.reset();
+    form2.reset();
     
 })
 
 function actualizarTabla() {
-    tabla.innerHTML = "";
+    tabla2.innerHTML = "";
     Cantidad.forEach((productos, index) => {
-        const fila = tabla.insertRow();
+        const fila = tabla2.insertRow();
         fila.insertCell().textContent = productos.cebollaLarga;
         fila.insertCell().textContent = productos.lechugaCrespa;
         fila.insertCell().textContent = productos.Mix;

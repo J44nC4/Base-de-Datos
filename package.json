@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
-    "test": "nodemon src/app_sample.js"
+    "test": "nodemon src/app_sample.js",
+    "start": "node app_sample.js"
   },
   "author": "JuanAljure",
   "license": "ISC",

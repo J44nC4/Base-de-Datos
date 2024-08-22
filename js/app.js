@@ -15,7 +15,7 @@ form.addEventListener("submit", function (e) {
     actualizarTabla();
     form.reset();
 });
-loginForm.addEventListener("submit",function(e){
+/* loginForm.addEventListener("submit",function(e){
     e.preventDefault();
     const correo= document.getElementById("loginCorreo").value;
     const telefono= document.getElementById("loginContra").value;
@@ -26,7 +26,7 @@ loginForm.addEventListener("submit",function(e){
         alert("Usuario no encontrado por favor verifique ");
     }
     loginForm.reset();
-})
+}) */
 function actualizarTabla() {
     tabla.innerHTML = "";
     usuarios.forEach((usuario, index) => {
