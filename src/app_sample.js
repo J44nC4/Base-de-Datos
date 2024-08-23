@@ -1,6 +1,10 @@
 const express= require('express');
 const mongoose = require('mongoose');
+const cors= require('cors');
 const app= express();
+
+app.use(cors());
+
 //importar rutas
 const ProductRoutes = require('./routes/product.routes')
 const salesRoutes= require('./routes/sale.routes')
@@ -15,6 +19,9 @@ mongoose.connect(process.env.DB_URL)
 /* app.get('/', function(req,res){
     res.send("hello world")
 }); */
+
+//configuraciones
+aa.use(express.urlencoded({ extended: false }));
 
 //Configurar rutas
 app.use('/products',ProductRoutes);
