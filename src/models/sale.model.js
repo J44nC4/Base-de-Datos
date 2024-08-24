@@ -1,7 +1,7 @@
-const { default: mongoose } = require('mongoose');
-const { schema } = require('./product.model');
+const mongoose = require('mongoose');
+/* const Schema  = require('./product.model'); */
 
-const Schema = require('mongosse').Schema;
+const Schema = require('mongoose').Schema;
 
 const Sale = new Schema({
     quantity: {

@@ -23,4 +23,4 @@ const saleController = {
     },
 };
 
-module.exports= SalesController;
+module.exports= saleController;

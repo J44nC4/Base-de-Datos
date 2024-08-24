@@ -1,6 +1,7 @@
 const Router = require('express').Router(); //solo trae el modulo "router" del express
 const Product = require("../models/product.model");
-
+/* const { route } = require('./product.routes');
+ */
 //crearemos una funcion asincrona
 Router.post('/', async function(req,res){
     try{
