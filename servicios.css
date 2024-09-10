@@ -1,0 +1,15 @@
+.card_1{
+    min-width: 0;
+    max-width: 120rem;
+    height: 60rem;
+}
+
+.img{
+    margin: auto;
+    margin-left: 8rem;
+    width: 90rem;
+}
+
+.img_1{
+    height: 45rem;
+}

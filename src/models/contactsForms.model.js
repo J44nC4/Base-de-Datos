@@ -6,7 +6,9 @@ const ContactForm = new contactSchema({
     nombre:String,
     email:String,
     telefono:Number,
-    mensaje:String
+    mensaje:String,
+    hora:String,
+    dia:String
 })
 
 module.exports = mongoose.model('contactsForms', ContactForm);
