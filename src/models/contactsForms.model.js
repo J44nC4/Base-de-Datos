@@ -4,11 +4,12 @@ const contactSchema= mongoose.Schema
 
 const ContactForm = new contactSchema({
     nombre:String,
-    email:String,
+    apellidos:String,
     telefono:Number,
-    mensaje:String,
-    hora:String,
-    dia:String
+    email:String,
+    //mensaje:String,
+    dia:String,
+    hora:String
 })
 
 module.exports = mongoose.model('contactsForms', ContactForm);
