@@ -3,10 +3,12 @@ const Schema = mongoose.Schema;
 
 //crear un nuevo modelo
 const Product = new Schema({
-    ref: String,
-    price: Number,
-    decription: String,
-    isAvailable: Boolean,
+    nombre: String,
+    precio: String,
+    total: String,
+    cebollaLarga:String,
+    lechugaCrespa:String,
+    Mix:String
 })
 
 module.exports= mongoose.model('products', Product);
