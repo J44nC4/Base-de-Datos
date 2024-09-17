@@ -65,9 +65,10 @@ th{
     
 }
 
-.img2{
-    padding: 1rem;
+img .img2{
+    padding: 0.5rem;
     position: relative;
+    margin: auto;
     
 }
 

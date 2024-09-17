@@ -41,9 +41,10 @@ async function getProducts() {
     let products = await fetch(apiURL);
     products = await products.json();
     products.forEach((product) => {
-        document.getElementById("body").innerHTML += `<h3>${products.cebollaLarga}</h3>
-    <h3>${products.lechugaCrespa}</h3> <h3>${products.Mix}</h3>`;
-    document.getElementById("button").disabled = true;
+        document.getElementById("body").innerHTML = `<h3>${(product.cebollaLarga * 500) * 8}</h3>
+    <h3>${(product.lechugaCrespa * 500) * 15}</h3> <h3>${(product.Mix * 500) * 12}</h3> 
+    <h3>${(product.Repollo * 500) * 8,5}</h3> <h3>${(product.Lulo * 500) * 6}</h3> <h3>${product.Scotch * 1500}</h3> <h3>${product.Rojo * 1200}</h3> `;
+        document.getElementById("button").disabled = true;
     });
 }
 
