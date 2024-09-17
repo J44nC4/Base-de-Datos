@@ -41,16 +41,17 @@ async function getProducts() {
     let products = await fetch(apiURL);
     products = await products.json();
     products.forEach((product) => {
-        document.getElementById("body").innerHTML = `<h3>${(product.cebollaLarga * 500) * 8}</h3>
+        document.getElementById("body").innerHTML += `<h3>${(product.cebollaLarga * 500) * 8}</h3>
     <h3>${(product.lechugaCrespa * 500) * 15}</h3> <h3>${(product.Mix * 500) * 12}</h3> 
-    <h3>${(product.Repollo * 500) * 8,5}</h3> <h3>${(product.Lulo * 500) * 6}</h3> <h3>${product.Scotch * 1500}</h3> <h3>${product.Rojo * 1200}</h3> `;
-        document.getElementById("button").disabled = true;
+    <h3>${(product.Repollo * 500) * 8,5}</h3> <h3>${(product.Lulo * 500) * 6}
+    </h3> <h3>${product.Scotch * 1500}</h3> <h3>${product.Rojo * 1200}</h3> `;
+        document.getElementById("button").disabled = false;
     });
 }
 
 async function createProduct() {
     document.getElementById("button").disabled = true;
-    const form = document.getElementById("form2");
+    const form = document.getElementById("forma");
     const formData = new FormData(form);
     const data = new URLSearchParams(formData).toString();
 
